@@ -1,0 +1,193 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color:#0071DC;
+    --sub-color: #ffc220;
+    --bright-blue: #e8f1fa;
+    --bright-black: #656565;
+    --bright-orange: #ffc320c6;
+    --bright-mid-blue: #0964bab2;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+.grid {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.grid__column-2 {
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 16.6667%;
+}
+.grid_column-3 {
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 10%;
+}
+.grid__column-5 {
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 20%;
+    margin: 10px 0;
+}
+
+.grid__column-4 {
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 33.33333%;
+}
+
+.grid__column-10 {
+    padding-left: 7px;
+    padding-right: 7px;
+    /* width: 83.3333%; */
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid {
+        width: 800px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .grid__column-5 {
+        padding-left: 7px;
+        padding-right: 7px;
+        width: 33.333%;
+        margin: 10px 0;
+    }
+
+    .groupcate-list a{
+        width: 20% !important;
+        
+    }
+
+    a.header__navbar-item-link{
+        display: none;
+    }
+    .header__search-input{
+        width: 100px;
+    }
+    .no-pointer__no-hover{
+        display: none;
+    }
+
+    .header-logo, #header__cart{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    img.footer-logo{
+        margin-left: 5px;
+    }
+
+    img.footer-img{
+        width: 80%;
+    }
+
+}
+
+.category__heading {
+    margin-left: 7px;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    margin: auto;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    z-index: 1;
+    animation: fadeIn ease .1s;
+}
+
+/* Button */
+.btn {
+    height: 40px;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--white-color);
+}
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Button Quên mk */
+.forget-pass {
+    margin: 8px 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* .auth-form__group:invalid{
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+} */
+.auth-form__group.invalid input {
+    border: solid 1px #f33a58;
+}
+
+.auth-form__group.invalid .message-notify-dndk {
+    color: #f33a58;
+}
+
+.auth-form__group.invalid .message-notify-pass {
+    color: #f33a58;
+}
+
+
