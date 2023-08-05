@@ -52,7 +52,7 @@ html {
 .grid__column-5 {
     padding-left: 7px;
     padding-right: 7px;
-    width: 20%;
+    width: calc(100%/6);
     margin: 10px 0;
 }
 
@@ -83,34 +83,9 @@ html {
         margin: 10px 0;
     }
 
-    .groupcate-list a{
-        width: 20% !important;
-        
+    .groupcate-list a {
+        width: 20%!important;
     }
-
-    a.header__navbar-item-link{
-        display: none;
-    }
-    .header__search-input{
-        width: 100px;
-    }
-    .no-pointer__no-hover{
-        display: none;
-    }
-
-    .header-logo, #header__cart{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    img.footer-logo{
-        margin-left: 5px;
-    }
-
-    img.footer-img{
-        width: 80%;
-    }
-
 }
 
 .category__heading {
